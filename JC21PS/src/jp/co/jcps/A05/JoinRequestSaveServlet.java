@@ -26,6 +26,7 @@ public class JoinRequestSaveServlet extends HttpServlet {
 	 */
 	public JoinRequestSaveServlet() {
 		super();
+
 	}
 
 	/**

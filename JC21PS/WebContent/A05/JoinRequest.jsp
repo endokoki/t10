@@ -49,11 +49,15 @@
   			ヒント②
   			<button>タグのvalueオプションはボタンを押した際に登録処理に渡すリクエストパラメータの値を表す。
   			 --%>
-  			<td colspan="1"><%= %></td>
-  			<td colspan="1"><button type='submit' name='registClubId'  value='<%=  %>' onclick="return confirm('申請しますか？')">部員登録申請</button></td>
+  			<td colspan="1"><%=bean.getClubNameList().get(i)%></td>
+  			<td colspan="1"><button type='submit'
+  									name='registClubId'
+  									value='<%=bean.getClubIdList().get(i)%>'
+  									onclick="return confirm('申請しますか？')">部員登録申請</button></td>
   		</tr>
+
   		<tr>
-  			<td colspan ="2"><%=  %></td>
+  			<td colspan ="2"><%=bean.getClubDescriptionList().get(i) %></td>
   		<%} %>
   		</tbody>
   	</table>
